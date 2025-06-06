@@ -5,95 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Form W HTML5</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Payment form example</h2>
+    <div class="container mt-5">
+    <div class="card bg-light">
+    <div class="card-body">
+        <h4 class="card-title mb-4">Payment form example</h4>
 
-        <div class="alert alert-danger mt-2" role="alert">
-            Some fields are missing
-        </div>
-            <form>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="numtarjeta" class="form-label">Card #</label>
-                        <input type="text" class="form-control" id="numtarjeta" placeholder="XXXXXXXXXXXX">
-                    </div>
+        <div class="alert alert-danger mt-2" role="alert">Some fields are missing</div>
 
-                    <div class="col-md-3">
-                        <label for="cvc" class="form-label">CVC #</label> 
-                        <input type="text" class="form-control" id="cvc" placeholder="0000">
-                    </div>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="numtarjeta" class="form-label">Card #</label>
+                    <input type="text" class="form-control" id="numtarjeta" placeholder="XXXXXXXXXXXX">
+                </div>
 
-                    <div class="col-md-3">
-                        <label for="importe" class="form-label">Amount</label>
-                        <div class="input-group">
-                            <span class="input-group-text">$</span>
-                            <input type="text" class="form-control" id="importe" placeholder="Amount">
-                        </div>
-                    </div>
+                <div class="col-md-3">
+                    <label for="cvc" class="form-label">CVC #</label> 
+                    <input type="text" class="form-control" id="cvc" placeholder="0000">
+                </div>
 
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="fname" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="fname">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="lname" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lname">
-                        </div>
-
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="ciudad" class="form-label">City</label>
-                            <input type="text" class="form-control" id="ciudad">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="estado" class="form-label">State</label>
-                            <select class="form-select" id="estado">
-                                <option selected>Pick a state</option>
-                                <option>Caracas</option>
-                                <option>Miranda</option>
-                                <option>Mérida</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="postal" class="form-label">Postal Code</label>
-                            <input type="text" class="form-control" id="postal">
-                        </div>
-                    </div>
-
-                    <div class="row mb-3">
-                        <label class="form-label">We accept:</label><br>
-                        <div class="form-check col-md-2">
-                            <input class="form-check-input" type="radio" name="mastercard" id="mcard">
-                            <label for="mastercard" class="form-chek-label"></label>
-                        <img src="https://e7.pngegg.com/pngimages/936/396/png-clipart-brand-logo-mastercard-text-messaging-paypal-logo-black-and-white-text-logo.png" height="30" alt="MasterCard"/>
-                        </div>
-                        <div class="form-check col-md-2">
-                            <input class="form-check-input" type="radio" name="mastercard" id="mcard">
-                            <label for="mastercard" class="form-chek-label"></label>
-                        <img src="https://e7.pngegg.com/pngimages/140/721/png-clipart-logo-computer-icons-visa-graphics-black-visa-text-logo-thumbnail.png" height="30" alt="visa"/>
-                        </div>
-                        <div class="form-check col-md-2">
-                            <input class="form-check-input" type="radio" name="mastercard" id="mcard">
-                            <label for="mastercard" class="form-chek-label"></label>
-                        <img src="https://w7.pngwing.com/pngs/942/940/png-transparent-american-express-centurion-card-credit-card-logo-atm-miscellaneous-label-text-thumbnail.png" height="30" alt="AmericanExpress">
-                        </div>
-
-                    <div class="mb-3 col-md-6">
-                        <label for="mensaje" class="form-label">Message</label>
-                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                        <p>Add any notes here.</p>
-                    </div>
-
-                    <div class="d-flex justify-content-end">
-                        <button type="reset" class="btn btn-secondary me-2">Cancel</button>
-                        <button type="submit" class="btn btn-primary me-2">Send</button>
+                <div class="col-md-3">
+                    <label for="importe" class="form-label">Amount</label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" id="importe" placeholder="Amount">
                     </div>
                 </div>
-            </form>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="fname">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lname">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="ciudad" class="form-label">City</label>
+                        <input type="text" class="form-control" id="ciudad">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="estado" class="form-label">State</label>
+                        <select class="form-select" id="estado">
+                            <option selected>Pick a state</option>
+                            <option>Caracas</option>
+                            <option>Miranda</option>
+                            <option>Mérida</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="postal" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postal">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label class="form-label">We accept:</label><br>
+                    <div class="form-check col-md-2">
+                        <input class="form-check-input" type="radio" name="mastercard" id="mcard">
+                        <label for="mastercard" class="form-chek-label"></label>
+                    <img src="https://e7.pngegg.com/pngimages/936/396/png-clipart-brand-logo-mastercard-text-messaging-paypal-logo-black-and-white-text-logo.png" height="30" alt="MasterCard"/>
+                    </div>
+                    <div class="form-check col-md-2">
+                        <input class="form-check-input" type="radio" name="mastercard" id="mcard">
+                        <label for="mastercard" class="form-chek-label"></label>
+                    <img src="https://e7.pngegg.com/pngimages/140/721/png-clipart-logo-computer-icons-visa-graphics-black-visa-text-logo-thumbnail.png" height="30" alt="visa"/>
+                    </div>
+                    <div class="form-check col-md-2">
+                        <input class="form-check-input" type="radio" name="mastercard" id="mcard">
+                        <label for="mastercard" class="form-chek-label"></label>
+                    <img src="https://w7.pngwing.com/pngs/942/940/png-transparent-american-express-centurion-card-credit-card-logo-atm-miscellaneous-label-text-thumbnail.png" height="30" alt="AmericanExpress">
+                    </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="mensaje" class="form-label">Message</label>
+                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                    <p>Add any notes here.</p>
+                </div>
+
+                <div class="text-end">
+                    <button type="reset" class="btn btn-secondary me-2">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
     </div>
 </body>
 </html>
+
+
